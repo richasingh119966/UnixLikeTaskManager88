@@ -1,11 +1,11 @@
 
-# Task Manager API
+# 🧠 Unix-Inspired Task Manager API
 
 A simple Flask-based task manager that mimics Unix-style commands like `ls` (list) and `fork` (create task). Tasks are created, listed, and deleted using RESTful API endpoints — plus a clean HTML UI for interaction.
 
 ---
 
-## Features
+## 🚀 Features
 
 - Create a new task (like `fork`)
 - List all tasks (like `ls`)
@@ -15,7 +15,7 @@ A simple Flask-based task manager that mimics Unix-style commands like `ls` (lis
 
 ---
 
-## Technolgy
+## 🛠️ Tech Stack
 
 - Python 3
 - Flask
@@ -24,7 +24,7 @@ A simple Flask-based task manager that mimics Unix-style commands like `ls` (lis
 
 ---
 
-##  Project Structure
+## 📂 Project Structure
 
 ```
 task-manager/
@@ -37,9 +37,9 @@ task-manager/
 
 ---
 
-## Process to Run
+## 🔧 How to Run
 
-###  Flask Installation
+### 1. Install Flask (if not already)
 ```bash
 pip install flask
 ```
@@ -54,14 +54,14 @@ Open your browser at:
 
 ---
 
-##  API Endpoints
+## 📬 API Endpoints
 
-### List All Tasks
+### ✅ List All Tasks
 ```http
 GET /tasks
 ```
 
-###  Create a Task
+### ➕ Create a Task
 ```http
 POST /tasks
 Content-Type: application/json
@@ -71,12 +71,14 @@ Content-Type: application/json
 }
 ```
 
-
+### ❌ Delete a Task
+```http
+DELETE /tasks/<id>
 ```
 
 ---
 
-## Example Usage
+## ✨ Example Usage
 
 - Visit homepage: [http://localhost:5000](http://localhost:5000)
 - Use buttons to list or create tasks
@@ -84,11 +86,14 @@ Content-Type: application/json
 
 ---
 
-##  Notes
+## 📌 Notes
 
 - Tasks are stored in a local `tasks.json` file
-
+- App is for demonstration only — not production ready
+- Simple and readable code for learning purposes
 
 ---
 
+## 🧑‍💻 Author
 
+Built with ❤️ for a take-home challenge.
